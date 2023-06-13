@@ -79,7 +79,7 @@ function AddHRMD({
           variant="standard"
           {...register("email", {
             required: true,
-            setValueAs: (value) => value.trim(),
+            setValueAs: (value) => value.toLowerCase().trim(),
           })}
         />
         <TextField
